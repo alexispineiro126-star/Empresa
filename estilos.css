@@ -11,8 +11,7 @@
 
 .header{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
     width: 100%;
     background-color: #010101;
     position: fixed;
@@ -28,21 +27,22 @@
     padding-top: 1rem;
     position: relative;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
 }
 
 .nav_list{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     list-style: none;
     gap: 1rem;
-    margin: 0;
+    margin-right: 100px;
     padding: 0;
 }
 
 .nav_item{
     text-decoration: none;
+    font-size: 16px;
 }
 
 .hamburger {
@@ -213,6 +213,13 @@
     color: #d6b85a;
 }
 
+@media (max-width: 768px) {
+    .logo{
+        margin: auto;
+    }
+}
+
+
 .footer{
     display: flex;
     justify-content: center;
@@ -239,7 +246,7 @@
             rgba(5, 10, 7, 0.55),
             rgba(5, 10, 7, 0.25)
         ),
-        url("./imagenes/yaguarete-portada.png");
+        url("./imagenes/yaguarete-portada.webp");
     background-size: cover;
     background-position: center;
 }
