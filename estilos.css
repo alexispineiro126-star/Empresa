@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: #000000;
 }
 
 
@@ -120,6 +121,9 @@
 .portada_img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .portada_buttons {
@@ -137,36 +141,18 @@
     justify-content: center;
     padding: 0.75rem 1.25rem;
     border: none;
-    border-radius: 999px;
     cursor: pointer;
-    background-color: #25D366;
-    color: #ffffff;
     font-weight: 600;
     text-decoration: none;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.portada_button:hover {
-    transform: translateY(-2px);
-    background-color: #1ebe58;
-}
-
-.portada_button:nth-of-type(2) {
-    background-color: #E1306C;
-}
-
-.portada_button:nth-of-type(2):hover {
-    background-color: #c2185b;
-}
-
-.portada_button i {
-    margin-right: 0.5rem;
-}
 
 @media (max-width: 768px) {
     .portada{
         width: 100%;
-        height: 50vh;
+        height: 60vh;
+        min-height: 320px;
     }
 
     .portada_buttons {
@@ -241,3 +227,101 @@
     text-align: center;
 }
 
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(6, 10, 8, 0.95),
+            rgba(5, 10, 7, 0.55),
+            rgba(5, 10, 7, 0.25)
+        ),
+        url("./imagenes/yaguarete-portada.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.hero-subtitle,
+.section-subtitle {
+    color: #d6b85a;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    color: #d6b85a;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+.hero p {
+    max-width: 600px;
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* BOTONES */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #d6b85a;
+    color: #10130e;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+}
+
+.bi{
+    padding-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+}
