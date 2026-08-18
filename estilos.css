@@ -11,6 +11,7 @@
 
 .header{
     display: flex;
+    padding-bottom: 20px;
     justify-content: right;
     width: 100%;
     background-color: #010101;
@@ -19,6 +20,7 @@
     left: 0;
     align-items: center;
     z-index: 9;
+    border-bottom: 1px solid #292b35;
 }
 
 .nav{
@@ -200,6 +202,7 @@
         url("./imagenes/yaguarete-portada.webp");
     background-size: cover;
     background-position: center;
+    margin-bottom: 0;
 }
 
 
@@ -207,14 +210,20 @@
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 0;
+}
+@media (max-width: 780px){
+    .hero-content{
+    padding: 0;
+    margin-top: 0;
+    }
 }
 
 .hero-subtitle,
 .section-subtitle {
     color: #d6b85a;
     font-size: 0.85rem;
-    text-align: center;
+    padding-left: 7px;
     font-weight: bold;
     letter-spacing: 4px;
     margin-bottom: 15px;
@@ -497,28 +506,50 @@
 
     .caja-productos {
         width: 92%;
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
 
     .producto {
-        padding: 15px;
+        padding: 12px;
+        flex-direction: column;
     }
 
 
     .producto-img {
-        height: 240px;
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 10px;
     }
 
 
     .nombre {
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 0;
     }
 
 
     .precio {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    .descripcion {
+        font-size: 13px;
+        margin: 8px 0;
+        min-height: auto;
+    }
+
+    .cuotas {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .comprar {
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
     }
 
 }
@@ -914,7 +945,6 @@
 
 .mapa {
     width: 100%;
-    height: 420px;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -1023,4 +1053,11 @@
 
 .tiempo{
     color: rgb(255, 255, 255);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #77777753;
+    width: 90%;
+    margin: 0px 0px 80px 10px ;
 }
