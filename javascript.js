@@ -335,10 +335,9 @@ botonWhatsapp.addEventListener("click", () => {
     }
 
 
-    // IMPORTANTE:
-    // Cambiá este número por el WhatsApp del negocio
+    // Número de WhatsApp del negocio
 
-    const numeroWhatsapp = "543755381918";
+    const numeroWhatsapp = "3755381918";
 
 
     let mensaje =

@@ -20,8 +20,8 @@
                 <li class="nav_item"><a class="a" href="#">Inicio</a></li>
                 <li class="nav_item"><a class="a" href="#productos">Productos</a></li>
                 <li class="nav_item"><a class="a" href="#empresa">Sobre nosotros</a></li>
-                <li class="nav_item"><a class="a" href="#">Ubicación</a></li>
-                <li class="nav_item"><a class="a" href="#">Contacto</a></li>
+                <li class="nav_item"><a class="a" href="#ubicacion">Ubicación</a></li>
+                <li class="nav_item"><a class="a" href="#contacto">Contacto</a></li>
             </ul>
             <!-- BOTÓN FLOTANTE DEL CARRITO -->
 
@@ -82,7 +82,7 @@
             id="boton-whatsapp"
             type="button">
 
-            🟢 Comprar por WhatsApp
+            <i class="bi bi-whatsapp"></i> Comprar por WhatsApp
 
         </button>
 
@@ -106,7 +106,7 @@
                 <h1>Calidad que deja huella.</h1>
                 <p>Conocé nuestra empresa, nuestros productos y todo lo que tenemos para ofrecerte.</p>
                 <div class="hero-buttons">
-                    <a href="#productos" class="btn btn-primary"><i class="bi bi-whatsapp"></i>Hablanos</a>
+                    <a href="https://wa.me/3755381918" target="_blank" rel="noopener" class="btn btn-primary"><i class="bi bi-whatsapp"></i>Hablanos</a>
                     <a href="https://www.instagram.com/yaguarete_distribuciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-secondary"><i class="bi bi-instagram"></i>siguenos</a>
                 </div>
             </div>
@@ -115,7 +115,7 @@
             <div class="imagen">
             <img class="img" src="./imagenes/yaguarete-1.png">
             </div>
-            <div class="imagen">
+            <div class="imagen" id="productos">
                 <h4 class="sobre">
                     SOBRE NOSOTROS
                 </h4>
@@ -157,7 +157,35 @@
         <button class="comprar">+  Añadir al carrito</button>
     </div>
 </section>
-
+<section class="ubicacion" id="ubicacion">
+    <div class="contein-mapa">
+                <div class="descripcion">
+                    <h3 class="h3"><i class="bi bi-geo-alt-fill"></i>Estamos en <span class="spam"><br>Obera Misiones</span></h3>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.901103018006!2d-55.12200250000001!3d-27.472338099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f8f55b46416eb7%3A0x126207b4753ff1b3!2sYaguarete%2C%20N3361%20Ober%C3%A1%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1787024044328!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+    <div class="ubicacion-info" id="contacto">
+        <h3>📍 Encontranos</h3>
+    
+        <p><strong>Distribución Yaguareté</strong></p>
+        <p>Oberá, Misiones</p>
+    
+        <hr>
+    
+        <h4 class="tiempo">🕐 Horarios</h4>
+        <p>Lunes a viernes: 8:00 a 18:00 hs</p>
+        <p>Sábados: 8:00 a 13:00 hs</p>
+    
+        <h4 class="tiempo">📦 ¿Querés hacer un pedido?</h4>
+        <p>Contactanos directamente por WhatsApp.</p>
+            <a href="https://wa.me/3755381918" target="_blank" rel="noopener" class="btn-whatsapp">
+                <i class="bi bi-whatsapp"></i>contactanos
+            </a>
+        </div>
+    </div>
+</section>
     <footer class="pie">
         <p class="footer_text">&copy; 2023 Distribución Yaguarete. Todos los derechos reservados.</p>
     </footer>
