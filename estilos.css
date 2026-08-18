@@ -190,6 +190,7 @@
 .hero {
     min-height: 100vh;
     display: flex;
+    border-bottom: 1px solid #333;
     align-items: center;
     position: relative;
     background:
@@ -887,7 +888,8 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: rgb(5, 5, 5);
+    border-top:1px solid #292929;
+    background-color: rgb(3, 3, 3);
 }
 
 .footer_text{
@@ -897,7 +899,7 @@
 @media (max-width: 400px){
 .footer_text{
         color: rgb(251, 249, 249);
-        font-size: small;
+        font-size: 11px;
     }
 }
 
