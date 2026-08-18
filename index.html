@@ -23,6 +23,80 @@
                 <li class="nav_item"><a class="a" href="#">Ubicación</a></li>
                 <li class="nav_item"><a class="a" href="#">Contacto</a></li>
             </ul>
+            <!-- BOTÓN FLOTANTE DEL CARRITO -->
+
+<button class="boton-carrito" id="boton-carrito" type="button">
+    🛒
+    <span class="contador-carrito" id="contador-carrito">0</span>
+</button>
+
+
+<!-- SECCIÓN DEL CARRITO -->
+
+<aside class="carrito" id="carrito">
+
+    <div class="carrito-header">
+
+        <h2>Mi carrito</h2>
+
+        <button 
+            class="cerrar-carrito" 
+            id="cerrar-carrito"
+            type="button">
+            ✕
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTOS -->
+
+    <div class="carrito-productos" id="carrito-productos">
+
+        <p class="carrito-vacio">
+            Tu carrito está vacío.
+        </p>
+
+    </div>
+
+
+    <!-- TOTAL -->
+
+    <div class="carrito-footer">
+
+        <div class="carrito-total">
+
+            <span>Total:</span>
+
+            <strong id="carrito-total">
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <!-- WHATSAPP -->
+
+        <button 
+            class="boton-whatsapp" 
+            id="boton-whatsapp"
+            type="button">
+
+            🟢 Comprar por WhatsApp
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- FONDO OSCURO CUANDO SE ABRE EL CARRITO -->
+
+<div 
+    class="fondo-carrito" 
+    id="fondo-carrito">
+</div>
         </nav>
     </header>
     <main>
@@ -38,32 +112,51 @@
             </div>
         </section>
         <section class="empresa" id="empresa">
-            <div class="section-content">
-                <p class="section-subtitle">
+            <div class="imagen">
+            <img class="img" src="./imagenes/yaguarete-1.png">
+            </div>
+            <div class="imagen">
+                <h4 class="sobre">
                     SOBRE NOSOTROS
-                </p>
-                <h2>Una empresa con identidad propia</h2>
-                <p>En Yaguareté trabajamos para ofrecer productosde calidad, combinando compromiso, dedicación y una fuerte identidad misionera.</p>
+                </h4>
+                <p class="h2">Somos Yaguareté Distrubución,una empresa dedicada a la preventa y distibución de calidad, con el compromiso de brindar un servicio confiable y entregas eficiente.</p>
+                <p class="confianza">!tu confianza es nuetra mejor precentacion</p>
             </div>
         </section>
-    <section class="section" id="productos">
-        <div class="section_content">
-            <img class="tarjeta"  src="./imagenes/vinos.jpeg" alt="Vinos">
-            <h6 class="section_title">Nuestros Productos</h6>
-        </div>
-        <div class="section_content">
-            <img class="tarjeta"  src="./imagenes/cerveza.jpeg" alt="Cerveza">
-            <h6 class="section_title">Nuestros Productos</h6>
-        </div>
-        <div class="section_content">
-            <img class="tarjeta" src="./imagenes/alfajores.jpeg" alt="Alfajores">
-            <h6 class="section_title">Nuestros Productos</h6>
-        </div>
-        <div class="section_content">
-            <img class="tarjeta" src="./imagenes/comida-dog.jpeg" alt="Comida para perros">
-            <h6 class="section_title">Nuestros Productos</h6>
-        </div>
-    </section>
+<section class="caja-productos">
+    <div class="producto">
+        <img class="producto-img" src="./imagenes/cerveza.jpeg" >
+        <h3 class="nombre">Cerveza</h3>
+        <p class="descripcion"> elegante y sofisticado.</p>
+        <p class="precio">$28.99 <strong class="ofertas">$38.99</strong></p>
+        <p class="cuotas">10 cuotas de $8.99</p>
+        <button class="comprar">+  Añadir al carrito</button>
+    </div>
+    <div class="producto">
+        <img class="producto-img" src="./imagenes/comida-dog.jpeg">
+        <h3 class="nombre">comida</h3>
+        <p class="descripcion">Para perros de raza.</p>
+        <p class="precio">$50.99  <strong class="ofertas">$69.99</strong></p>
+        <p class="cuotas">10 cuotas de $9.99</p>
+        <button class="comprar">+  Añadir al carrito</button>
+    </div>
+    <div class="producto">
+        <img class="producto-img" src="./imagenes/alfajores.jpeg"> 
+        <h3 class="nombre">Alfajores</h3>
+        <p class="descripcion">Deliciosos y de buena calidad.</p>
+        <p class="precio">$30.99<strong class="ofertas">$50.99</strong></p>
+        <p class="cuotas">10 cuotas de $6.99</p>
+<button class="comprar">+  Añadir al carrito</button>
+    </div>
+    <div class="producto">
+        <img class="producto-img" src="./imagenes/vinos.jpeg">
+        <h3 class="nombre">Vinos</h3>
+        <p class="descripcion"> con sabor a uvas.</p>
+        <p class="precio">$36.99 <strong class="ofertas">$69.99</strong></p>
+        <p class="cuotas">10 cuotas de $3.99</p>
+        <button class="comprar">+  Añadir al carrito</button>
+    </div>
+</sectionv>
     <footer class="footer">
         <p class="footer_text">&copy; 2023 Distribución Yaguarete. Todos los derechos reservados.</p>
     </footer>
